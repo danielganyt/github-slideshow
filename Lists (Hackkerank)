@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    full_list = []
+    for i in range (0, int(input())):
+        temp = input().split(" ")
+        if temp[0] == "insert":
+            full_list.insert(int(temp[1]), int(temp[2]))   
+        if temp[0] == "append":
+            full_list.append(int(temp[1]))
+        if temp[0] == "remove":
+            full_list.remove(int(temp[1]))
+        if temp[0] == "sort":
+            full_list.sort()
+        if temp[0] == "pop":
+            full_list.pop()
+        if temp[0] == "print":
+            print(full_list)
+        if temp[0] == "reverse":
+            full_list.reverse()
+            
+#https://www.hackerrank.com/challenges/python-lists/problem
